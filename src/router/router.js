@@ -4,11 +4,17 @@ import App from '../App';
 
 
 /*----------------引入模块---------------*/
-import LessExercise from '../page/lessExercise/exercise.js' ;
-import SassExercise from '../page/sassExercise/sassExercise.js' ;
-import FlexDocument from '../page/flexDocument/flexDocument.js' ;
-import AntdMobile from '../page/antdMobile/antdMobile.js' ;
-import Login from '../page/Login/Login.js' ;
+import LessExercise from '../page/lessExercise/exercise.js' ;      //less 练习文件
+import SassExercise from '../page/sassExercise/sassExercise.js' ;  //sass 练习文件，没有配置成功；
+import FlexDocument from '../page/flexDocument/flexDocument.js' ;   //flex 兼容测试；
+import AntdMobile from '../page/antdMobile/antdMobile.js' ;        //antd desigin 练习文件；
+import Login from '../page/Login/Login.js' ;                    //login 登陆文件
+import SimulationLogin from '../page/SimulationLogin/SimulationLogin.js' ;   // 模拟登陆；
+import SexCheckbox from '../page/SexCheckbox/SexCheckbox.js' ;   // sex 复选框；
+import TemplateHtml from '../page/templateHtml/templateHtml.js' ;   // html 模板；
+import Clock from '../page/clock/clock.js'                       // 定时器 ；
+import clockModul from '../page/clock/clockModul.js'                       // 定时器 ；
+
 //路由模块
 export default class RouterMap extends Component{
     render(){
@@ -22,6 +28,11 @@ export default class RouterMap extends Component{
                         <Route path="/AntdMobile" component={AntdMobile} />
                         <Route path="/FlexDocument" component={FlexDocument} />
                         <Route path="/Login" component={Login} />
+                        <Route path="/SimulationLogin" component={SimulationLogin} />
+                        <Route path="/SexCheckbox" component={SexCheckbox} />
+                        <Route path="/TemplateHtml" component={TemplateHtml} />
+                        <Route path="/Clock" component={Clock} />
+                        <Route path="/clockModul" component={clockModul} />
                     </Switch>
                 </BrowserRouter>
             </div>
